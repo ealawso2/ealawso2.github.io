@@ -1,30 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Float</title>
+<title>Lighthouse Bistro</title>
 <meta charset="utf-8">
 <style>
-body { width:500px;
-       background-color:#FFFFFF;
-       color:#000000;
+
+
+
+		
+* { box-sizing: border-box; margin: 0; }
+body {font-family:Verdana, Arial, sans-serif; }
+nav ul { list-style-type: none;
+         padding: 1em; }
+nav a { text-decoration: none;
+        padding: 1em;
+		font-weight: bold;
 }
-div {  background-color:#F3F1BF;
+header { background-color: #869DC7;
+        color: #00005D; 
+		background-image: url(light.gif); 
+		background-repeat: no-repeat;
+		padding: 2em 0 2em 10em;
+		font-size: 120%;
 }
-h1 {   background-color:#658B42;
-       padding:10px;	
-       color: #E1DB5F;
+h2 { color: #869dc7; 
+     font-family: arial, sans-serif;
 }
-p {    font-family:Arial,sans-serif;  
- }
-</style>
+nav { float: left; }
+main{ padding: 1em; }
+aside { float: right; padding: 1em; }
+figure { text-align: center; }
+figcaption { font-style: italic; text-align: center;}
+footer { background-color: #869DC7;
+         font-size:70%;
+         text-align: center;
+         padding: 2em;
+		 clear: both;
+}
+header, main, nav, figure, footer { display: block; }
+</style> 
 </head>
 <body>
-<h1>Yellow Lady Slipper</h1>
-<div>
-  <img src="yls.jpg" alt="Yellow Lady Slipper" height="100" width="100">
-  <p>The Yellow Lady Slipper grows in wooded areas and blooms in June each year. The flower is a member of the orchid family.</p>
-</div>
-<h2>Be Green When Enjoying Wildflowers</h2>
-<p>Enjoy wild plants in their native surroundings. Protect their environment in all possible ways &mdash; support organizations dedicated to preserving their habitat. </p> 
+  <header>
+    <h1>Lighthouse Bistro</h1>
+  </header>
+  <div id="content">
+    <nav>
+	<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	 </ul>
+    </nav>
+   <aside>
+       <figure>
+         <img src="lighthouse.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+         <figcaption>Cana Island Lighthouse</figcaption>
+	   </figure>
+   </aside>
+  <main> 
+     <h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+ </main>
+
+   </div>
+     <footer>Copyright &copy;     </footer>
 </body>
 </html>
+
+
