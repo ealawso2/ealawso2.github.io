@@ -1,52 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS3 background-clip</title>
+<title>Casita Sedona</title>
 <meta charset="utf-8">
-<style>
-
-.test {  background-image: url(myislandback.jpg);
- background-clip: content-box; 
- width: 400px; 
- padding: 20px;
- margin-bottom: 10px;
- border: 10px dashed #000;
- }
-.test1 {  background-image: url(myislandback.jpg);
- background-clip: padding-box;
- width: 400px; 
- padding: 20px;
- margin-bottom: 10px;
- border: 10px dashed #000;
- }
-.test2 {  background-image: url(myislandback.jpg);
- background-clip: border-box;
- width: 400px; 
- padding: 20px;
- margin-bottom: 10px;
- border: 10px dashed #000; 
- }
-
-</style>
+<link href="casita.css" rel="stylesheet">
 </head>
 <body>
-<div class="test">
-<h1>Tropical Island</h1>
-<p>
-Enjoy relaxing in the warm sunshine on your own tropical island retreat. 
-</p>
-</div>
-<div class="test1">
-<h1>Tropical Island</h1>
-<p>
-Enjoy relaxing in the warm sunshine on your own tropical island retreat. 
-</p>
-</div>
-<div class="test2">
-<h1>Tropical Island</h1>
-<p>
-Enjoy relaxing in the warm sunshine on your own tropical island retreat. 
-</p>
+<div id="wrapper">
+  <header>
+      <h1>Casita Sedona</h1>
+  </header>
+  <nav>
+  <ul> 
+    <li><a href="index.html">Home</a></li>
+	<li><a href="rooms/canyon.html">Canyon Room</a></li>
+	<li><a href="rooms/javelina.html">Javelina Room</a></li>
+	<li><a href="events/weekend.html">Weekend Events</a></li>
+	<li><a href="events/festival.html">Festivals</a></li>
+	<li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <main>
+  <h2>This is the Home Page</h2>
+  <img src="images/scenery.jpg" alt="Sedona Scenery" width="450" height="200">
+  <h3>This is a Subheading</h3>
+  <p>This is a paragraph of sentences. This is a paragraph of sentences. This is a paragraph of sentences. This is a paragraph of sentences. This is a paragraph of sentences. This is a paragraph of sentences. </p>
+  <h3>This is a Subheading</h3>
+  <p>This is a paragraph of sentences. This is a paragraph of sentences. This is a paragraph of sentences. This is a paragraph of sentences. This is a paragraph of sentences. This is a paragraph of sentences. </p>
+  </main>
+  <footer>
+  Copyright &copy; Your Name Here
+  </footer>
 </div>
 </body>
 </html>
